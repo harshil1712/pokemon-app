@@ -1,4 +1,4 @@
-#Fri May 24 02:02:38 IST 2019
-base.0=/home/harshil/projects/flutter/pokemon_app/build/app/intermediates/transforms/dexMerger/debug/0
+#Sat May 25 02:10:59 IST 2019
+base.0=/home/harshil/projects/pokemon-app/pokemon_app_flutter/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

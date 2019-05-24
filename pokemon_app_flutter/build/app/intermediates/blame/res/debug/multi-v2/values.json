@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/harshil/projects/flutter/pokemon_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/harshil/projects/pokemon-app/pokemon_app_flutter/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/harshil/projects/flutter/pokemon_app/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/harshil/projects/pokemon-app/pokemon_app_flutter/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
