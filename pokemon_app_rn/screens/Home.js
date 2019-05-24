@@ -25,7 +25,12 @@ const HomeScreen = ({navigation}) => {
         data={poke}
         renderItem={({item})=><View style={styles.cardStyle}><TouchableOpacity onPress={()=>{navigation.navigate('Pokemon',{
             name:item.name,
-            image:item.img
+            image:item.img,
+            pokeHeight:item.height,
+            pokeWeight: item.weight,
+            types:item.type,
+            weakness:item.weaknesses,
+            nextEvolution:item.next_evolution
         })}}><Card name={item.name} image={item.img} /></TouchableOpacity></View>}
         keyExtractor={(item)=>item.num}
         numColumns={2}
@@ -37,7 +42,7 @@ const HomeScreen = ({navigation}) => {
 HomeScreen.navigationOptions =({navigation})=> ({
     title: 'Pokemon App',
     headerStyle: {
-        backgroundColor: '#03A9F4',
+        backgroundColor: '#00BCD4',
     },
     headerTitleStyle: {
         fontWeight: 'normal',
@@ -51,7 +56,8 @@ const styles = StyleSheet.create({
   cardStyle: {
     flex:1,
     flexDirection: 'column',
-    borderWidth:0.1, 
+    backgroundColor:'#fff',
+    borderRadius:5,
     margin:5,
     elevation:3, 
     height:150,
