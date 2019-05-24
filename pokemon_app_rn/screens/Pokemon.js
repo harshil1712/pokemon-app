@@ -16,9 +16,9 @@ export default PokemonScreen = ({navigation})=> {
             <View style={styles.card}>
                 <Image source={{uri:`${image}`}} style={{height:175, width:175, marginTop:-100}} />
                 <Text style={{fontSize:20, color:'black', fontWeight:'bold'}}>{name.toUpperCase()}</Text>
-                <Text>Height: {pokeHeight}</Text>
-                <Text>Weight: {pokeWeight}</Text>
-                <Text style={styles.textBold}>Type</Text>
+                <Text style={{marginTop:10, color:'#000'}}>Height: {pokeHeight}</Text>
+                <Text style={{marginTop:10, color:'#000'}}>Weight: {pokeWeight}</Text>
+                <Text style={styles.textBold}>Types</Text>
                 <View style={styles.labelView}>
                     {types.map(type=>(<Text style={styles.typeLabel} key={type}>{type}</Text>))}
                 </View>
@@ -55,7 +55,9 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     textBold:{
-        fontWeight:'bold'
+        fontWeight:'bold',
+        color:'#000',
+        padding:10,
     },
     typeLabel:{
         backgroundColor:'#FFC107',
@@ -73,7 +75,6 @@ const styles = StyleSheet.create({
         borderRadius:20
     },
     labelView:{
-        flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-evenly',
     }
